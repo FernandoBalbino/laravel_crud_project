@@ -60,4 +60,12 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+
+    public function setUsernameAttribute(string $value): void{
+        $this->attributes[self::USERNAME] = strtolower($value);
+    }
+
+    public function getFirstName(){
+        return explode(' ', $this->name)[0];
+    }
 }

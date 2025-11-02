@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>@yield('title')</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="{{ asset('assets/css/dashboard.css') }}">
+@yield('header')
+</head>
+<body class="bg-light">
+
+<div class="container py-4 container-limit">
+
+  <!-- Header -->
+
+    @include('partials.header')
+  <!-- Form -->
+    <div class="body-content">
+        @yield('body')
+    </div>
+
+  <!-- Card Post -->
+
+</div>
+
+<!-- Modal Alterar Imagem -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+@yield('footer')
+</body>
+</html>
